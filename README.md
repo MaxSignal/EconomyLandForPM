@@ -1,4 +1,4 @@
-Forked From https://github.com/poggit-orphanage/EconomyS/EconomyLand
+Forked From https://github.com/poggit-orphanage/EconomyS/tree/master/EconomyLand
 
 # EconomyS
 The economy plugin for PocketMine-MP.
