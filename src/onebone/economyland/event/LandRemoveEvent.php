@@ -2,7 +2,7 @@
 
 /*
  * EconomyS, the massive economy plugin with many features for PocketMine-MP
- * Copyright (C) 2013-2021  onebone <me@onebone.me>
+ * Copyright (C) 2013-2017  onebone <jyc00410@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,19 +21,18 @@
 namespace onebone\economyland\event;
 
 use pocketmine\event\Cancellable;
-use pocketmine\event\CancellableTrait;
 use pocketmine\event\Event;
 
-class LandRemoveEvent extends Event implements Cancellable {
-	use CancellableTrait;
+class LandRemoveEvent extends Event implements Cancellable{
+	public static $handlerList = null;
 
 	private $id;
 
-	public function __construct($id) {
+	public function __construct($id){
 		$this->id = $id;
 	}
 
-	public function getId() {
+	public function getId(){
 		return $this->id;
 	}
 }
